@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Smooth background gradient */
+body {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar styling */
+aside {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #f3f4f6;
+}
+
+/* Custom hover glow for buttons */
+.btn-glow:hover {
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.5);
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
