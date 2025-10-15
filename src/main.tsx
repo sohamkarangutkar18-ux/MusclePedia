@@ -8,7 +8,7 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import { BrowserRouter } from "react-router-dom";
 
 // 👇 paste your real Clerk publishable key here (from Clerk dashboard)
-const PUBLISHABLE_KEY = "pk_test_bmF0dXJhbC1ncm91cGVyLTEwLmNsZXJrLmFjY291bnRzLmRldiQ";
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
